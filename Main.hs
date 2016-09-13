@@ -72,4 +72,4 @@ main = do
   interpret program
   putStrLn ""
 
-  putStrLn $ "Monad laws test result: " ++ if and [l1, l2, l3] then "pass" else "fail"
+  putStrLn $ "Monad laws test passed: " ++ (show $ and [l1, l2, l3] )
